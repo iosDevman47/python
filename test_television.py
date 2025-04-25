@@ -1,9 +1,6 @@
 import pytest
 from television import Television
 
-def get_tv_state(tv):
-    return f"Status: {tv._status}, Muted: {tv._muted}, Volume: {tv._volume}, Channel: {tv._channel}"
-
 def test_init():
     tv = Television()
     assert not tv._status
